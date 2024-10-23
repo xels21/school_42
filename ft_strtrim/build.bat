@@ -1,1 +1,1 @@
-clang .\ft_strtrim.c -o .\ft_strtrim.exe
+clang .\ft_strtrim.c -g -O0 -o .\ft_strtrim.exe
