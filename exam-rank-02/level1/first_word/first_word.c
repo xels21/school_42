@@ -32,10 +32,6 @@ $>
 
 #include <unistd.h>
 
-void write_newline()
-{
-  write(1, "\n", 1);
-}
 
 int itoa(int value, char *str, int base)
 {
