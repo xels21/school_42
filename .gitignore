@@ -1,3 +1,9 @@
+# for files w/o extension
+*
+!*/
+!*.*
+
 *.exe
 *.ilk
 *.pdb
+
