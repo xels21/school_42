@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "*.jscad": "javascript",
-    "new": "c"
+    "new": "c",
+    "cstdlib": "c"
   }
 }
