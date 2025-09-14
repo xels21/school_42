@@ -29,18 +29,26 @@ int reverseStringWOffset(char *str, int offset)
 
 int atoi(const char *str)
 {
-  int isNeg = 0;
-  int len = stringLength((char *)str);
-  if(len ==0)
-    return 0;
-  for (int i = 0; i < len; i++)
-  {
-    /* code */
+  int i = 0, sign = 1, result = 0;
+
+  // Skip whitespace
+  while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
+    i++;
+
+  // Handle sign
+  while (str[i] == '-' || str[i] == '+') {
+    if (str[i] == '-')
+      sign = -sign;
+    i++;
   }
-  
 
+  // Convert digits
+  while (str[i] >= '0' && str[i] <= '9') {
+    result = result * 10 + (str[i] - '0');
+    i++;
+  }
 
-  return 0;
+  return sign * result;
 }
 
 int itoa(int value, char *str, int base)
