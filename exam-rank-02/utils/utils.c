@@ -27,6 +27,21 @@ int reverseStringWOffset(char *str, int offset)
   return reverseString(str + offset) + offset;
 }
 
+int atoi(const char *str)
+{
+  int isNeg = 0;
+  int len = stringLength((char *)str);
+  if(len ==0)
+    return 0;
+  for (int i = 0; i < len; i++)
+  {
+    /* code */
+  }
+  
+
+
+  return 0;
+}
 
 int itoa(int value, char *str, int base)
 {

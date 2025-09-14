@@ -3,6 +3,10 @@
 
 int main(int argc, char **argv)
 {
+  // Test atoi
+  char num[] = "-123";
+  printf("atoi(\"-123\") = %d\n", atoi(num));
+
   // Test stringLength
   char str1[] = "hello";
   printf("stringLength(\"hello\") = %d\n", stringLength(str1));

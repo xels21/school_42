@@ -6,4 +6,6 @@ int reverseStringWOffset(char *str, int offset);
 
 int reverseString(char *str);
 
+int atoi(const char *str);
+
 int itoa(int value, char *str, int base);
